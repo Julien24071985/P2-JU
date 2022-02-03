@@ -14,6 +14,7 @@
     src: url(./Booki/fonts/Raleway-Medium.ttf);
 }
 
+
 body {
     font-family: "Raleway-medium", sans-serif;
     
@@ -55,10 +56,12 @@ header {
 #Logo {
     width: 100px;
     image-rendering: pixelated;
+    margin-left: 25px;
 }
 
 .Header-UL {
     display: flex;
+    margin-right: 20px;
 }
 .Header-UL li {
     padding: 0 10px;
@@ -86,19 +89,22 @@ main {
 
 }
 h1 {
-    font-size: 1.2em;        
+    font-size: 1.2em;  
+    margin-left: 35px;      
 }
 h2 {
     font-size: 1em;
 }
 .centre-ville {
     margin-top: 10px;
+    margin-left: 35px;
 }
 form {
     display: flex;
     align-items: center;
     justify-content: flex-start; 
     margin: 15px 0;
+    margin-left: 35px;
     
     
 }
@@ -132,15 +138,17 @@ button {
     color: white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-style: none; 
-    
-     
+    border-style: none;    
 }
+
+
+
 
 /* *****FILTRES****** */
 
 .filtres {
     margin-top: 20px;
+    margin-left: 40px;
     max-width: 75%;
     display: flex;
     justify-content: space-between;    
@@ -193,6 +201,7 @@ button {
     justify-content: flex-start;
     align-items: center;
     margin-top: 20px;
+    margin-left: 40px;
 }
 
 .logements-dispo p {
@@ -332,7 +341,7 @@ button {
 
 .activités ul {
     display: flex;
-    
+    margin-left: 20px;
 }
 
 .activités-info {
@@ -347,7 +356,7 @@ button {
 
 .activités h2 {
     margin-top: 50px;
-    margin-left: 25px;
+    margin-left: 35px;
     
 }
 
@@ -411,9 +420,13 @@ footer {
       
 }
 
+footer ul {
+    margin-left: 25px;
+}
+
 footer li {
-    line-height: 30px;
-    
+    line-height: 28px;
+    font-size: 15px;
     
     
 }
@@ -424,24 +437,226 @@ footer strong {
 
 }
 
+/* *********SMARTPHONE********* */
 
+@media all and (max-width : 480px) {
 
+    header {
+        padding-top: 30px;
+        line-height: 80px;
+        margin-bottom: 0;
+        flex-direction: column;
+    }
 
+    .Header-UL li {
+        padding-right: 35px;
+        padding-left: 25px; 
+            
+    }
 
-
-    
+    .Header-UL li:hover::after  {
+        content: "";
+        /* position: absolute;
+        left: 0;
+        top: -14px;
+        height: 2px; */
+        width: 100%;
+        background-color: blue;
+        
+    }
+    .Header-UL li:hover a {
+        color: blue;
+    }
    
-
-   
-
  
-    
+    h1 {
+        font-size: 20px;
+        margin-left: 18px;
+    }
+
+    .centre-ville {
+        margin-left: 18px;
+        font-size: 14px;
+    }
+
+    form {
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+
+    form input {
+        border-right: none;
+        padding-right: 55px;
+        
+    }
+
+    button {
+        width: 40px;
+        border-radius: 10px;
+        margin-left: -15px;
+        
+    }
+
+    span {
+        display: none;
+    }
+
+    .filtres {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .guy {
+        margin-left: 150px;
+    }
+
+    .bill  {
+        margin-top: 100px;
+    }
+
+    .down {
+        margin-top: 100px;
+    }
 
 
+    .filtres li {
+        height: 50px;
+    }
+
+   .logements-dispo {
+       margin-left: 15px;
+       
+   }
+
+   .logements-dispo p {
+       font-size: 13px;
+       
+   }
+
+   .choix-hotels {
+       flex-direction: column-reverse;       
+   }
+
+   .populaires {
+       width: 100%;
+       border-radius: 0px;
+   }
+
+   .populaires h2 {
+       margin-top: 10px;
+       margin-bottom: 12px;
+   }
+
+   .images-populaires {
+       width: 87%;
+       margin-left: -5px;    
+   }
+
+   .images-populaires a {
+       height: 110px;
+   }
+
+   .images-populaires figure {
+       margin-bottom: 0;
+   }
+
+   .images-populaires img {
+       height: 110px;
+       min-width: 100px;
+   }
+
+   .images-populaires figcaption {
+       margin-left: 15px;
+       
+   }
+
+   .images-populaires h3 {
+       font-size: 14px;
+   }
+
+   .images-populaires p {
+       font-size: 12px;
+   }
+
+   .hebergements {
+       background-color: transparent;
+   }
+
+   .hebergements h2 {
+       margin-bottom: 10px;
+   }
+
+   .images-hebergements {
+       justify-content: center;
+       
+   }
+
+   .card-hebergements {
+       width: 270px;
+       margin-left: -5px;
+       margin-bottom: 5px;
+   }
+
+   .card-hebergements img {
+       height: 100px;
+   }
+
+   .card-hebergements h3 {
+       font-size: 14px;
+   }
+
+   .card-hebergements p {
+       font-size: 13px;
+   }
+
+   .afficher-plus {
+       font-weight: bold;
+       font-size: 15px;
+       margin-top: 15px;
+   }
+
+   .activités h2 {
+       margin: 20px 35px 5px 20px;
+   }
+
+   .activités ul {
+       flex-direction: column;
+       margin-left: 0;
+       align-items: center;   
+   }
 
 
+   .activités figure {
+       width: 278px;
+       height: 160px;
+       margin-left: 5px;       
+   }
 
-  
+   .activités img {
+        width: 278px;
+        height: 120px;
+   }
 
-  
+   .frioul {
+       margin-top: 20px;
+   }
 
+   .pl {
+       margin-top: 20px;
+   }
+
+   footer {
+       flex-direction: column;
+       padding-top: 25px
+   }
+
+   footer ul {
+       margin-left: -15px;
+       
+   }
+
+   footer li {
+       font-size: 13px;
+   }
