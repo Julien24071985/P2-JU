@@ -18,8 +18,8 @@
         <img src="./Booki/images/logo/Booki.png" id="Logo" alt="Logo Booki">
         <nav>
             <ul class="Header-UL">               
-                <li><a href="Hébergements à Marseille">Hébergements</a></li>
-                <li><a href="Activités à Marseille">Activités</a></li>               
+                <li><a href="#dirh">Hébergements</a></li>
+                <li><a href="#dira">Activités</a></li>               
             </ul>   
         </nav>
     </header>
@@ -35,12 +35,12 @@
             <form class="search-form">
                 <i class="search-form-i fas fa-map-marker-alt"></i>
                 <input type="text" placeholder="Marseille, France">
-                <button><span>Rechercher</span></button>                             
+                <button><i class="fas fa-search"></i><span>Rechercher</span></button>                             
             </form>    
                 <ul class="filtres">
                     <h2>Filtres</h2>
-                    <li><i class="bill fas fa-money-bill-wave filtres-i"></i><input class="down" type="button" value="Economique"></li>
-                    <li><i class="guy fas fa-male filtres-i"></i><input type="button" value="Familial"></li>
+                    <li class="eco"><i class="bill fas fa-money-bill-wave filtres-i"></i><input class="down" type="button" value="Economique"></li>
+                    <li class="fam"><i class="guy fas fa-male filtres-i"></i><input type="button" value="Familial"></li>
                     <li><i class="fas fa-heart filtres-i"></i><input type="button" value="Romantique"></li>
                     <li><i class="fas fa-dog filtres-i"></i><input type="button" value="Animaux autorisés"></li>
                 </ul>
@@ -52,7 +52,7 @@
                 </ul> 
             <div class="choix-hotels">
             <section class="hebergements">
-                    
+                <a name="dirh"></a>    
                 <h2>Hébergements à Marseille</h2>
 
                 <div class="images-hebergements">
@@ -188,7 +188,7 @@
 
             </aside>
             </div>
-            
+                <a name="dira"></a>
                 <section class="activités">
             
                     <h2>Activités à Marseille</h2>
