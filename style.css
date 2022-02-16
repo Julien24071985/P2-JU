@@ -506,8 +506,7 @@ footer strong {
 
     form input {
         border-right: none;
-        padding-right: 55px;
-        
+        padding-right: 55px;        
     }
 
     button {
@@ -600,6 +599,7 @@ footer strong {
 
    .hebergements {
        background-color: transparent;
+       margin: auto;
    }
 
    .hebergements h2 {
@@ -615,6 +615,8 @@ footer strong {
        width: 277px;
        margin-left: -5px;
        margin-bottom: 5px;
+       margin: 10px;
+       width: 100%;
    }
 
    .card-hebergements img {
@@ -683,9 +685,64 @@ footer strong {
 
 /* *******TABLETTE******** */
 
-@media all and (min-width : 481px ) and(max-width : 769px) {
+@media all and (min-width : 481px) and (max-width : 768px) {
 
-    header {
+    body {
+        border-right: 2px solid red;
+        max-width: 768px;
+    }
+
+    .filtres {
+        flex-wrap: wrap;
+    }
+
+    .eco {
+        margin-bottom: 10px;
+    }
+
+    .choix-hotels {
+        flex-wrap: wrap;
+    }
+
+    .hebergements {
+        margin: 0 10px 0 10px;
+    }
+
+    .populaires {
+        margin-top: 20px;
+        width: 82%;
+    }
+
+    .images-populaires {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .images-populaires figure {
+        width: 30%;
+    }
+
+    .activités {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .activités ul {
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-left: 0px;
+        justify-content: center;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+   
+
+    
+
+    /* header {
         padding: 0 0 20px 20px;
     }
 
@@ -789,7 +846,7 @@ footer strong {
         padding-left: 30px;
     }
 
-    
+     */
 
 
 
